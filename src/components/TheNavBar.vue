@@ -11,16 +11,26 @@
                     <div class="mr-auto extra"></div>
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                     <router-link to="/home"
+                    > <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </router-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">About Us</a>
+                     <router-link to="/about-us"
+                    > <a class="nav-link">About Us</a>
+                     </router-link>
                     </li>
                     <li class="nav-item">
+                        <router-link to="/products-gallery"
+                    >
                       <a class="nav-link">Products Gallery</a>
+                        </router-link>
                     </li>
                       <li class="nav-item">
+                          <router-link to="/contact-us"
+                    >
                         <a class="nav-link">Contact Us</a>
+                          </router-link>
                       </li>
                     
                   </ul>

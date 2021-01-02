@@ -1,21 +1,22 @@
 <template>
   <div>
     <NavBar/>
-    <section class="main_container">
-      <Home/>
-    </section>
+    <div class="main_container">
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+    </transition>
+      <!-- <Home/> -->
+    </div>
   </div>
 </template>
 
 <script>
 import NavBar from './components/TheNavBar'
-import Home from './components/Home'
 
 export default {
   name: 'App',
   components: {
-    NavBar,
-    Home
+    NavBar
   }
 }
 </script>
@@ -26,6 +27,18 @@ export default {
 .main_container {
   margin-top: 120px;
   /* padding: 1rem; */
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 
 </style>

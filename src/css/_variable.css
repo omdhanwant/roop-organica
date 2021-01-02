@@ -8,14 +8,16 @@ html body{
 
 /* Css variables */
 :root{
-    --primary-color: #4458dc;
-    --primary-color2: #854fee;
+    --primary-color: #6e8b3d;
+    --primary-color-dark: #445626;
+    --primary-color-light: #96b85d;
+    --secondary-color:#C6D837;
     --border-color: #e6e6e6;
     --title-color:#141313;
     --text-color:#777777;
-    --gradient-color:linear-gradient(90deg,#4458dc 0%, #854fee 100%);
-    --shadow-color: 0px 10px 30px rgba(118, 85, 225,0.3);
-    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+    --gradient-color:linear-gradient(90deg,#445626 0%, #96b85d 100%);
+    --shadow-color: 0px 10px 30px rgba(198, 216, 55,0.3);
+    --box-shadow: 0px 10px 30px rgba(198, 216, 55,0.205);
 
     /* font family */
     --roboto:'Roboto',sans-serif;
