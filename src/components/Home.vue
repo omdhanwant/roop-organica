@@ -5,7 +5,10 @@
         <section class="row aboutus-section justify-content-center align-center m-0">
             <div class="header-section">
                 <span class="line"></span>
+                <div class="header-content" data-aos="fade-up">
                 <span class="header-text">About Roop Organica</span>
+                <span class="header-subtext">Beauty and Health</span>
+                </div>
                 <span class="line"></span>
             </div>
             

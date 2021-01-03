@@ -87,13 +87,26 @@ section {
     width: 100%;
     text-align: center;
 }
-.header-section .header-text {
+
+.header-section .header-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-section .header-content .header-text {
     font: normal 600 32px/32px var(--roboto);
     color: var(--primary-color-dark);
 }
+
+.header-section .header-content .header-subtext {
+    color: var(--primary-color);
+}
+
 .header-section .line {
-    width: 22%;
-    height: 2px;
+    width: 50%;
+    height: 1px;
     margin: 10px 10px;
     background: var(--border-color);
     display: inline-block;

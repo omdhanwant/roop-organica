@@ -1,7 +1,7 @@
 <template>
     <div>
  <header class="header_area">
-        <div class="main_menu">
+        <div class="main_menu" data-aos="fade-down">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand"><img src="" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
