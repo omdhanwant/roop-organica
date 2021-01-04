@@ -7,16 +7,19 @@
     </transition>
       <!-- <Home/> -->
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import NavBar from './components/TheNavBar'
+import NavBar from './components/TheNavBar';
+import Footer from './components/TheFooter';
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar,
+    Footer
   },
   data() {
     return {

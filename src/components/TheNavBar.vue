@@ -12,24 +12,24 @@
                   <ul class="navbar-nav">
                     <li class="nav-item">
                      <router-link to="/home"
-                    > <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    > <a class="nav-link"><i class="fas fa-seedling"></i> Home <span class="sr-only">(current)</span></a>
                     </router-link>
                     </li>
                     <li class="nav-item">
                      <router-link to="/about-us"
-                    > <a class="nav-link">About Us</a>
+                    > <a class="nav-link"><i class="fas fa-seedling"></i> About Us</a>
                      </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link to="/products-gallery"
                     >
-                      <a class="nav-link">Products Gallery</a>
+                      <a class="nav-link"><i class="fas fa-seedling"></i> Products Gallery</a>
                         </router-link>
                     </li>
                       <li class="nav-item">
                           <router-link to="/contact-us"
                     >
-                        <a class="nav-link">Contact Us</a>
+                        <a class="nav-link"><i class="fas fa-seedling"></i> Contact Us</a>
                           </router-link>
                       </li>
                     
@@ -82,6 +82,14 @@ export default {
 
 .header_area .main_menu .navbar-nav .extra {
     display: block;
+}
+
+.header_area .main_menu .navbar-nav a .fa-seedling {
+    visibility: hidden
+}
+
+.header_area .main_menu .navbar-nav .active a .fa-seedling, .header_area .main_menu .navbar-nav a:hover .fa-seedling{
+   visibility: unset;
 }
 
 .header_area .main_menu .navbar-nav .active a{

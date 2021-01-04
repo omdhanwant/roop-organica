@@ -18,7 +18,7 @@
                 <div class="row grid m-0 justify-content-center">
                     <!-- add product cards -->
                     <div v-for="(product, i) in filteredProducts" :key="i" class="col-lg-3 col-md-4 col-sm-6">
-                            <ProductCard :name="product.name" :description="product.name"></ProductCard>
+                            <ProductCard :product="product"></ProductCard>
                     </div>
                     
                 </div>
@@ -55,7 +55,7 @@ export default {
             this.filterProducts();
         },
         filterProducts(){
-          this.filteredProducts =  this.products.filter(p => p.id == this.selectedCategory);
+          this.filteredProducts =  this.products.filter(p => p.type == this.selectedCategory);
         }
     }
 }

@@ -16,7 +16,7 @@ a:hover {
 }
 
 a:hover{
-    background: var(--gradient-color);
+    background: var(--primary-color-light);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -134,4 +134,5 @@ p.para {
     color: var(--text-color);
     font: normal 500 16px/25px var(--roboto);
     text-align: center;
+    margin: 0;
 }

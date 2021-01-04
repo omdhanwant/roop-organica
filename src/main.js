@@ -13,9 +13,15 @@ import 'jquery/dist/jquery.slim.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap/dist/css/bootstrap.css';
 
+// font awesome
+import './css/all.min.css';
+
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// filters
+import './services/filters';
 
 Vue.config.productionTip = false
 

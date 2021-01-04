@@ -15,7 +15,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nostrum? Animi quaerat impedit sint expedita quam possimus inventore iusto aliquam, asperiores dicta ab velit laborum. Voluptates, assumenda sunt? Odit, incidunt.
                 </p>
                 <p class="read-more">
-                    <button @click="navigateTo('about-us')" class="btn button primary">Read More</button>
+                    <button @click="navigateTo('about-us')" class="btn button primary">Know Us More</button>
                 </p>
             </div>
         </section>
@@ -46,15 +46,12 @@ export default {
 
 <style scoped>
 .aboutus-section .read-more {
-  position: absolute; 
-  bottom: 0; 
-  left: 0;
-  top: 80%;
   width: 100%; 
   text-align: center; 
-  margin: 0; padding: 2px 0; 
-  filter: brightness(1.5);
-  background-image: linear-gradient(to bottom, transparent, var(--background-light));
+  margin: 0; 
+  padding: 2px 0; 
+  /* filter: brightness(1.5); */
+  /* background-image: linear-gradient(to bottom, transparent, var(--primary-color-light)); */
 }
 
 .aboutus-section .read-more a {
