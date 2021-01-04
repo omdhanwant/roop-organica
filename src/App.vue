@@ -1,7 +1,7 @@
 <template>
   <div>
-    <NavBar/>
-    <div class="main_container">
+    <NavBar :isFixed="isFixedNav"></NavBar>
+    <div class="main_container" :style="{'marginTop' : mainContainerMarginTop }">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
     </transition>
@@ -17,6 +17,43 @@ export default {
   name: 'App',
   components: {
     NavBar
+  },
+  data() {
+    return {
+      isFixedNav: false,
+      NAV_HEIGHT: 120,
+      mainContainerMarginTop: '0'
+    }
+  },
+  methods: {
+    handleScroll() {
+          // this.closeNavCollapse();
+          this.last_known_scroll_position = window.scrollY;
+
+            if (!this.ticking) {
+              window.requestAnimationFrame(() => {
+                // Do something with the scroll position
+                if(this.last_known_scroll_position > this.NAV_HEIGHT ) {
+                  this.isFixedNav = true;
+                  this.mainContainerMarginTop = this.NAV_HEIGHT + 'px';
+                  } else {
+                    this.isFixedNav = false;
+                    this.mainContainerMarginTop = '0';
+                  }
+                this.ticking = false;
+              });
+
+              this.ticking = true;
+            }
+        }
+  },
+   created () {
+    window.addEventListener('scroll', this.handleScroll);
+
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+    
   }
 }
 </script>
@@ -24,10 +61,9 @@ export default {
 <style>
 @import url(css/_global.css);
 
-.main_container {
+/* .main_container {
   margin-top: 120px;
-  /* padding: 1rem; */
-}
+} */
 
 .fade-enter-active,
 .fade-leave-active {

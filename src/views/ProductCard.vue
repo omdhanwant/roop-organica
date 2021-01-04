@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="product-card">
+        <div data-aos="zoom-in" class="product-card">
             <div class="card">
                 <img src="../assets/default.png" class="card-img-top" alt="default">
                 <div class="card-body text-center">
-                    <h5 class="card-title">{{name}}</h5>
+                    <div class="card-title">{{name}}</div>
                     <p class="card-text">{{description}}</p>
                     <button  class="btn button primary">Know More</button>
                 </div>
@@ -32,6 +32,15 @@ export default {
 
     .card-title {
         font: normal 500 20px/32px var(--roboto);
+        color: var(--primary-color-dark);
+        color: var(--primary-color-dark);
+        border-bottom: 1px solid var(--background-light);
+        width: 100%;
+    }
+
+    .card-text {
+        font: normal 300 14px/32px var(--roboto);
+        color: var(--primary-color-light);
     }
 
 </style>

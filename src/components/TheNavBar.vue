@@ -1,6 +1,6 @@
 <template>
     <div>
- <header class="header_area">
+ <header class="header_area" :class="{'fixed-nav' : isFixed}">
         <div class="main_menu" data-aos="fade-down">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand"><img src="" alt="logo"></a>
@@ -43,15 +43,26 @@
     </div>
 </template>
 
+<script>
+export default {
+    props: ['isFixed']
+}
+</script>
+
 <style scoped>
 .header_area {
+    box-shadow: var(--box-shadow);
+    z-index: 111;
+    background: #fff;
+    top: -120px;
+    transition: all 2s ease;
+}
+
+.header_area.fixed-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: var(--box-shadow);
-    z-index: 111;
-    background: #fff;
 }
 
 .header_area .main_menu .navbar .navbar-brand {

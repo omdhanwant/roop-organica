@@ -48,7 +48,7 @@ button:hover,
 .button.primary {
     background: var(--primary-color);
     background-clip: padding-box;
-    color: var(--primary-color-light);
+    color: #fff;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
 }

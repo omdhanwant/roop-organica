@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="product-area">
-            <SectionHeader  heading="Best Seller"></SectionHeader>
+            <SectionHeader  heading="Our Products"></SectionHeader>
             
                     <div class="button-group pb-4 text-center">
 
@@ -17,7 +17,7 @@
             
                 <div class="row grid m-0 justify-content-center">
                     <!-- add product cards -->
-                    <div v-for="(product, i) in products" :key="i" class="col-lg-3 col-md-4 col-sm-6">
+                    <div v-for="(product, i) in filteredProducts" :key="i" class="col-lg-3 col-md-4 col-sm-6">
                             <ProductCard :name="product.name" :description="product.name"></ProductCard>
                     </div>
                     
@@ -30,6 +30,7 @@
 <script>
 import SectionHeader from '../views/SectionHeader';
 import ProductCard from '../views/ProductCard';
+import Products from '../services/products.service';
 export default {
     components: {
         SectionHeader,
@@ -37,31 +38,24 @@ export default {
     },
      data() {
         return {
-            products:[ {
-                name: 'Product 1',
-                id: 'latest'
-            },
-            {
-                name: 'Product 2',
-                id: 'popular'
-            },
-            {
-                name: 'Product 3',
-                id: 'popular'
-            },
-            {
-                name: 'Product 4',
-                id: 'upcoming'
-            }
-            ],
-            selectedCategory: 'all',
+            products: Products.products,
+            filteredProducts: [],
+            selectedCategory: 'popular',
             categories: ['popular', 'latest' , 'upcoming']
         }
     },
 
+    created () {
+        this.filterProducts();
+  },
+
     methods:{
         onCategorySelected(category) {
             this.selectedCategory = category;
+            this.filterProducts();
+        },
+        filterProducts(){
+          this.filteredProducts =  this.products.filter(p => p.id == this.selectedCategory);
         }
     }
 }
