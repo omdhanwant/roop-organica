@@ -13,6 +13,7 @@ html body{
     --primary-color-light: #96b85d;
     --secondary-color:#C6D837;
     --border-color: #e6e6e6;
+    --background-light: #e6e6e6;
     --title-color:#141313;
     --text-color:#777777;
     --gradient-color:linear-gradient(90deg,#445626 0%, #96b85d 100%);

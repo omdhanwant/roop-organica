@@ -4,11 +4,22 @@ a {
     cursor: pointer;
 }
 
+a:not([href]):not([class]), a:not([href]):not([class]):hover  {
+    color: var(--text-color)!important;
+}
+
 a:focus,
 a:active,
 a:hover {
     outline: 0px!important;
     box-shadow: none!important;
+}
+
+a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 @font-face{
@@ -30,26 +41,26 @@ button:hover,
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--roboto);
     position: relative;
-    border: 3px solid transparent;
+    border: 1px solid transparent!important;
     border-radius: 5px;
 }
 
-.button.btn-primary {
-    background: var(--gradient-color);
+.button.primary {
+    background: var(--primary-color);
     background-clip: padding-box;
-    color: whitesmoke;
+    color: var(--primary-color-light);
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
 }
 
-.button.btn-primary:hover{
-    background: whitesmoke;
-    color: black;
+.button.primary:hover{
+    background: var(--primary-color-light);
+    color: var(--primary-color-dark);
     background-clip: padding-box;
 
 }
-
-.button.btn-primary::after, .button.btn-secondary::after{
+/* 
+.button.primary::after, .button.secondary::after{
     position: absolute;
     top: -2px; left: -2px;
     bottom: -2px; right: -2px;
@@ -57,18 +68,17 @@ button:hover,
     content: "";
     z-index: -1;
     border-radius: 4px;
-}
+} */
 
-.button.btn-secondary {
-    background: whitesmoke;
+.button.secondary {
+    background: var(--secondary-color);
     background-clip: padding-box;
     transition: background .6s ease;
+    color: var(--primary-color-dark)!important;
 }
 
-.button.btn-secondary:hover {
-    background: var(--gradient-color);
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
+.button.secondary:hover {
+    color: var(--primary-color-dark)!important;
 }
 /* Buttons */
 

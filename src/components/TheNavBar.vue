@@ -50,6 +50,8 @@
     left: 0;
     width: 100%;
     box-shadow: var(--box-shadow);
+    z-index: 111;
+    background: #fff;
 }
 
 .header_area .main_menu .navbar .navbar-brand {
