@@ -21,7 +21,8 @@
         </section>
 
 
-    <HomeProductSection></HomeProductSection>
+    <HomeProductSection />
+    <HomeTestimonialSection />
         
     </div>
 </template>
@@ -29,11 +30,13 @@
 <script>
 import SectionHeader from '../views/SectionHeader';
 import HomeProductSection from '../views/HomeProductSection';
+import HomeTestimonialSection from '../views/HomeTestimonialSection';
 
 export default {
     components: {
         SectionHeader,
-        HomeProductSection
+        HomeProductSection,
+        HomeTestimonialSection
     },
 
     methods: {
