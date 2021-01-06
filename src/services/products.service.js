@@ -1,27 +1,37 @@
+import AloeveraSoap from '../assets/soaps/AloeveraSoap.jpg';
+import BaPanchamrutBasedbabySoaps from '../assets/soaps/BabySoapPanchamrutBased.jpg';
+import BabySoaps from '../assets/soaps/BabySoaps.jpg';
+import DetanSoap from '../assets/soaps/DetanSoap.jpeg';
+
 export default {
     products: [ {
-        name: 'Product 1',
+        name: 'Aloevera Soap',
         type: 'latest',
         price: 200,
-        shortDescription:'Product 1 short description'
+        shortDescription:'Product 1 short description',
+        asset: AloeveraSoap
     },
     {
-        name: 'Product 2',
+        name: 'Panchamrut Based',
         type: 'popular',
         price: 220,
-        shortDescription:'Product 2 short description'
+        shortDescription:'Product 2 short description',
+        asset: BaPanchamrutBasedbabySoaps
     },
     {
-        name: 'Product 3',
+        name: 'Baby Soaps',
         type: 'popular',
         price: 300,
-        shortDescription:'Product 3 short description'
+        shortDescription:'Product 3 short description',
+        asset: BabySoaps
     },
     {
-        name: 'Product 4',
+        name: 'Detan Soap',
         type: 'upcoming',
         price: 150,
-        shortDescription:'Product 4 short description'
+        shortDescription:'Product 4 short description',
+        asset: DetanSoap
+        
     }
     ]
 }

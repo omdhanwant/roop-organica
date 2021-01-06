@@ -23,9 +23,15 @@ import "aos/dist/aos.css";
 // filters
 import './services/filters';
 
+// image lazy loading
+import VueTinyLazyloadImg from 'vue-tiny-lazyload-img';
+require('intersection-observer');
+
+
 Vue.config.productionTip = false
 
 Vue.use(route.VueRouter)
+Vue.use(VueTinyLazyloadImg);
 
 
 new Vue({

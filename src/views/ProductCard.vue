@@ -3,7 +3,7 @@
         <div data-aos="zoom-in" class="product-card">
             <div class="ribbon ribbon-top-right"><span>{{product.price | currency }}</span></div>
             <div class="card">
-                <img src="../assets/default.png" class="card-img-top" alt="default">
+                <img :src="'../' + product.asset" class="card-img-top" alt="default">
                 <div class="card-body text-center">
                     <div class="card-title">{{product.name}}</div>
                     <p class="card-text">{{product.shortDescription}}</p>

@@ -5,7 +5,7 @@ import ContactUs from './components/ContactUs.vue';
 import AboutUs from './components/AboutUs.vue';
 
 const router = new VueRouter({
-    mode:'history',
+    mode:'hash',
     routes : [
         {path: '' , redirect: '/home' },
         { path: '/home', component: Home },

@@ -3,7 +3,7 @@
  <header class="header_area" :class="{'fixed-nav' : isFixed}">
         <div class="main_menu" data-aos="fade-down">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand"><img src="" alt="logo"></a>
+               <router-link to="/home" class="navbar-brand"><img src="../assets/logo.jpg" alt="logo"> </router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -67,17 +67,22 @@ export default {
 
 .header_area .main_menu .navbar .navbar-brand {
     padding: 0.2rem 0.5rem;
+    width: 20%;
+}
+.header_area .main_menu .navbar .navbar-brand img {
+    width: 100%;
 }
 .header_area .main_menu .navbar {
-    padding: 2rem 10rem;
+    padding: 1rem 3rem;
+    /* flex-wrap: nowrap!important; */
 }
 
 .header_area .main_menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
+    font: normal 500 15px/20px var(--roboto);
     text-transform: uppercase;
-    padding: 1.7rem;
+    padding: 0.7rem;
     color: var(--title-color);
-
+    text-align: center;
 }
 
 .header_area .main_menu .navbar-nav .extra {
@@ -107,13 +112,23 @@ export default {
 }
 
 /* responsive */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 900px) {
   .extra {
       display: none;
   }
 
   .header_area .main_menu .navbar {
     padding: 2rem;
+}
+
+.header_area .main_menu .navbar .navbar-brand {
+    width: 30%;
+}
+}
+
+@media only screen and (max-width: 720px) {
+.header_area .main_menu .navbar .navbar-brand {
+    width: 35%;
 }
 }
 </style>

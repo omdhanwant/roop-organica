@@ -46,7 +46,7 @@
 
             <div class="client row">
                     <div class="col-lg-4 col-md-12 client-img">
-                        <img src="../assets/default.png" alt="img-1" class="img-fluid">
+                        <img v-lazyload src="../assets/default.png" alt="img-1" class="img-fluid">
                     </div>
                     <div class="col-lg-8 col-md-12 about-client">
                         <h4 class="text-uppercase">Om Dhanwant</h4>
@@ -80,7 +80,7 @@ export default {
 .carousel_container .client {
     background: #ffffff10;
     box-shadow: var(--box-shadow);
-    margin: 3rem 0rem;
+    margin: 1rem 0rem;
 }
 
 .carousel_container .client .client-img {
@@ -97,6 +97,7 @@ export default {
 
 .carousel_container .client .about-client p {
     font-size: 14px;
+    margin: 8px 0px;
 }
 /* 
 .carousel_container .owl-carousel .owl-item {

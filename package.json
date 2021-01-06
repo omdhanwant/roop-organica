@@ -11,10 +11,12 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.2",
     "core-js": "^3.6.5",
+    "intersection-observer": "^0.12.0",
     "jquery": "^3.5.1",
     "vue": "^2.6.11",
     "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.4.9",
+    "vue-tiny-lazyload-img": "^0.1.0",
     "vueisotope": "^3.1.2"
   },
   "devDependencies": {
