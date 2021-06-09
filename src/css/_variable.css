@@ -1,5 +1,6 @@
 html body{
     margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -15,6 +16,7 @@ html body{
     --border-color: #e6e6e6;
     --background-light: #e6e6e6;
     --title-color:#141313;
+    --title-color-contrast:#ffffff;
     --text-color:#777777;
     --gradient-color:linear-gradient(90deg,#445626 0%, #96b85d 100%);
     --shadow-color: 0px 10px 30px rgba(198, 216, 55,0.3);

@@ -41,7 +41,7 @@
 <style scoped>
 
 .col-3  {
-    padding: 8px;
+    padding: 0;
 }
 img {
     object-fit: contain;

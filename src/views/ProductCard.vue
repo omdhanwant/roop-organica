@@ -7,7 +7,7 @@
                 <div class="card-body text-center">
                     <div class="card-title">{{product.name}}</div>
                     <p class="card-text">{{product.shortDescription}}</p>
-                    <button  class="btn button primary">Know More</button>
+                   <router-link :to="'product-details/' + product.name"> <button  class="btn button primary">Know More</button> </router-link>
                 </div>
             </div>
         </div>

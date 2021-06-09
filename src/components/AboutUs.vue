@@ -1,7 +1,7 @@
 <template>
     <div>
         <section>
-            <SectionHeader  heading="About Roop Organica" :subHeading="constants.COMPANY_LINE"></SectionHeader>
+            <SectionHeader  heading="About RoopOrganica" :subHeading="constants.COMPANY_LINE"></SectionHeader>
             <div class="col-12">
                 <p class="para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nostrum? Animi quaerat impedit sint expedita quam possimus inventore iusto aliquam, asperiores dicta ab velit laborum. Voluptates, assumenda sunt? Odit, incidunt.
